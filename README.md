@@ -14,7 +14,7 @@ When someone tells you to "type something in the command line", it actually mean
 alias h='cd ~'
 alias c='clear'
 alias ..='cd ..'
-alias ls='ls -lach',
+alias ls='ls -lach'
 alias v.u='vagrant up'
 alias v.h='vagrant halt'
 alias v.r='vagrant reload'
