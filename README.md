@@ -37,6 +37,14 @@ alias v.h.r='cd ~/Homestead && vagrant reload'
 alias v.h.s='cd ~/Homestead && vagrant ssh'
 ```
 
+# PHP
+```
+alias phpunit='vendor/bin/phpunit'
+
+function pf(){
+  phpunit --filter "$@"
+}
+```
 # Customize
 ## Disable bell
 ```
