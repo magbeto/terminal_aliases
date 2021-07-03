@@ -15,20 +15,28 @@ alias h='cd ~'
 alias c='clear'
 alias ..='cd ..'
 alias ls='ls -lach',
-alias v.up='vagrant up'
-alias v.halt='vagrant halt'
-alias v.reload='vagrant reload'
-alias v.ssh='vagrant ssh'
+alias v.u='vagrant up'
+alias v.h='vagrant halt'
+alias v.r='vagrant reload'
+alias v.s='vagrant ssh'
 alias gd='cd /g/Mi\ unidad/' #Google Drive
 alias w.hosts='/c/Windows/system32/drivers/etc/hosts' #Windows hosts file
 ```
 ## Vagrant Centos7
 ```
-alias v.c7.up='cd ~/centos7 && vagrant up'
-alias v.c7.halt='cd ~/centos7 && vagrant halt'
-alias v.c7.reload='cd ~/centos7 && vagrant reload'
-alias v.c7.ssh='cd ~/centos7 && vagrant ssh'
+alias v.c7.u='cd ~/centos7 && vagrant up'
+alias v.c7.h='cd ~/centos7 && vagrant halt'
+alias v.c7.r='cd ~/centos7 && vagrant reload'
+alias v.c7.s='cd ~/centos7 && vagrant ssh'
 ```
+## Vagrant Homestead
+```
+alias v.h.u='cd ~/Homestead && vagrant up'
+alias v.h.h='cd ~/Homestead && vagrant halt'
+alias v.h.r='cd ~/Homestead && vagrant reload'
+alias v.h.s='cd ~/Homestead && vagrant ssh'
+```
+
 # Customize
 ## Disable bell
 ```
