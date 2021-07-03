@@ -10,7 +10,7 @@ When someone tells you to "type something in the command line", it actually mean
 
 # Alias and functions
 ## Basics
-´´´
+```
 alias h='cd ~'
 alias c='clear'
 alias ..='cd ..'
@@ -21,24 +21,24 @@ alias v.reload='vagrant reload'
 alias v.ssh='vagrant ssh'
 alias gd='cd /g/Mi\ unidad/' #Google Drive
 alias w.hosts='/c/Windows/system32/drivers/etc/hosts' #Windows hosts file
-´´´
+```
 ## Vagrant Centos7
-´´´
+```
 alias v.c7.up='cd ~/centos7 && vagrant up'
 alias v.c7.halt='cd ~/centos7 && vagrant halt'
 alias v.c7.reload='cd ~/centos7 && vagrant reload'
 alias v.c7.ssh='cd ~/centos7 && vagrant ssh'
-´´´
+```
 # Customize
 ## Disable bell
-´´´
+```
 bind 'set bell-style none'
-´´´
+```
 ## Show git branch in prompt
-´´´
+```
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
 export PS1="\[\e[32m\]\u@\H - \[\e[32m\]\t \[\e[32m\]\w \[\e[36m\]\$(parse_git_branch) \[\e[00m\] \n \$ "
-´´´
+```
