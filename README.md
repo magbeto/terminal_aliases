@@ -42,6 +42,7 @@ alias v.h.s='cd ~/Homestead && vagrant ssh'
 alias phpunit='vendor/bin/phpunit'
 
 function pf(){
+  clear
   phpunit --filter "$@"
 }
 ```
