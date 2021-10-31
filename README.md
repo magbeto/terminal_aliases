@@ -59,3 +59,7 @@ parse_git_branch() {
 
 export PS1="\[\e[32m\]\u@\H - \[\e[32m\]\t \[\e[32m\]\w \[\e[36m\]\$(parse_git_branch) \[\e[00m\] \n \$ "
 ```
+## Ubuntu Battery Limit 60% charge to longer battery life
+```
+vim /sys/class/power_supply/BAT0/charge_control_end_threshold
+```
