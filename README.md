@@ -57,18 +57,24 @@ parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-#promptColorBlack="0;30"
-#promptColorRed="0;31"
-#promptColorGreen="0;32"
-#promptColorBrown="0;33"
-#promptColorBlue="0;34"
-#promptColorPurple="0;35"
-#promptColorCyan="0;36"
-#promptColorWhite="0;37"
-# 1:## for light colors
+textBlack="\[\e[0;30m\]"
+textRed="\[\e[0;31m\]"
+textGreen="\[\e[0;32m\]"
+textBrown="\[\e[0;33m\]"
+textBlue="\[\e[0;34m\]"
+textPurple="\[\e[0;35m\]"
+textCyan="\[\e[0;36m\]"
+textWhite="\[\e[0;37m\]"
+textLightRed="\[\e[1;31m\]"
+textLightGreen="\[\e[1;32m\]"
+textLightBrown="\[\e[1;33m\]"
+textLightBlue="\[\e[1;34m\]"
+textLightPurple="\[\e[1;35m\]"
+textLightCyan="\[\e[1;36m\]"
+textColorEnd="\[\e[0m\]"
 
-export PS1="\e[0;37m┌──\e[1;32m\u@\e[0;32m\H \e[1;34m\w \e[1;31m$(parse_git_branch)\n\e[0;37m└─\$ "
-
+#export PS1="\e[0;37m\]┌──\[\e[0m\]\e[1;32m\]\u\[\e[0m\]\e[0;37m\]@\[\e[0m\]\e[0;32m]\\H \[\e[0m\]\e[1;34m\]\w \[\e[0m\]\e[1;31m\]$(parse_git_branch)\[\e[0m\]\n\e[0;37m\]└─\$ \[\e[0m\]"
+export PS1="$textWhite┌──$textColorEnd$textLightGreen\u$textColorEnd$textWhite@$textColorEnd$textGreen\H$textColorEnd $textLightBlue\w$textColorEnd $textLightRed$(parse_git_branch)$textColorEnd\n$textWhite└─\$ $textColorEnd"
 ```
 ## Ubuntu Battery Limit 60% charge to longer battery life
 ```
