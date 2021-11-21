@@ -57,7 +57,18 @@ parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-export PS1="\[\e[32m\]\u@\H - \[\e[32m\]\t \[\e[32m\]\w \[\e[36m\]\$(parse_git_branch) \[\e[00m\] \n \$ "
+#promptColorBlack="0;30"
+#promptColorRed="0;31"
+#promptColorGreen="0;32"
+#promptColorBrown="0;33"
+#promptColorBlue="0;34"
+#promptColorPurple="0;35"
+#promptColorCyan="0;36"
+#promptColorWhite="0;37"
+# 1:## for light colors
+
+export PS1="\e[0;37m┌──\e[1;32m\u@\e[0;32m\H \e[1;34m\w \e[1;31m$(parse_git_branch)\n\e[0;37m└─\$ "
+
 ```
 ## Ubuntu Battery Limit 60% charge to longer battery life
 ```
