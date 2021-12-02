@@ -40,7 +40,7 @@ alias v.h.s='cd ~/Homestead && vagrant ssh'
 # PHP
 ```
 alias phpunit='vendor/bin/phpunit'
-
+alias artisanLoadConfig='php artisan config:cache && php artisan view:cache && php artisan route:cache'
 function pf(){
   clear
   phpunit --filter "$@"
@@ -50,6 +50,8 @@ function pu(){
   clear
   phpunit "$@"
 }
+
+
 
 ```
 # Customize
