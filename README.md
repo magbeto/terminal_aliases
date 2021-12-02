@@ -51,7 +51,10 @@ function pu(){
   phpunit "$@"
 }
 
-
+# Bitnami LAMP
+```
+alias restartApache='sudo /opt/bitnami/ctlscript.sh restart apache'
+```
 
 ```
 # Customize
