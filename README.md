@@ -45,6 +45,12 @@ function pf(){
   clear
   phpunit --filter "$@"
 }
+
+function pu(){
+  clear
+  phpunit "$@"
+}
+
 ```
 # Customize
 ## Disable bell
