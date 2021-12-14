@@ -55,7 +55,17 @@ function pu(){
 ```
 alias restartApache='sudo /opt/bitnami/ctlscript.sh restart apache'
 ```
-
+# GIT
+```
+alias g.nb='git checkout master && git pull origin master && git checkout -b'
+function g.m(){
+  git checkout master
+  git pull origin master
+  git merge $1
+  git branch -d $1
+  git push origin master
+}
+```
 ```
 # Customize
 ## Disable bell
