@@ -14,13 +14,17 @@ When someone tells you to "type something in the command line", it actually mean
 alias h='cd ~'
 alias c='clear'
 alias ..='cd ..'
-alias ls='ls -lach'
+alias l='clear && ls -lach --group-directories-first'
 alias v.u='vagrant up'
 alias v.h='vagrant halt'
 alias v.r='vagrant reload'
 alias v.s='vagrant ssh'
 alias gd='cd /g/Mi\ unidad/' #Google Drive
 alias w.hosts='/c/Windows/system32/drivers/etc/hosts' #Windows hosts file
+
+function search.text(){
+  grep -iRl "$1" ./
+}
 ```
 ## Vagrant Centos7
 ```
